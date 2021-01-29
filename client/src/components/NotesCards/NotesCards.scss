@@ -1,0 +1,20 @@
+.notes-cards {
+  .card {
+    &.is-completed {
+      opacity: 0.5;
+    }
+
+    .card-content {
+      text-align: center;
+
+      .note-description {
+        margin-top: 10px;
+      }
+    }
+
+    .card-actions {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
