@@ -36,7 +36,7 @@ const NotesCards: React.FC<Props> = ({ notes, setNotes }) => {
     <Grid className="notes-cards" container justify="center" spacing={2}>
       {notes.map((note: Note, index: number) => (
         <Grid key={index} item xs={10} sm={8} md={6} className="note">
-          <Card className={"card" + (isCompleted(index) ? " is-completed" : "")} elevation={6}>
+          <Card className={"card " + (isCompleted(index) && "is-completed")} elevation={6}>
             <CardContent className="card-content">
               <Typography>{note.title}</Typography>
               <Typography className="note-description"> {note.description}</Typography>
